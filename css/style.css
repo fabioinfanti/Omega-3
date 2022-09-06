@@ -13,12 +13,24 @@ b {
     font-weight: 900;
 }
 
+ul {
+    font-weight: 400;
+    font-size: 1.2384rem;
+    margin: 24px 0;
+    line-height: 1.3;
+}
+
 mark {
     background-color: orange;
 }
 
 .mark {
     background-color: #F5F5F5;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .float-right {
@@ -34,8 +46,8 @@ mark {
 }
 
 .float-right3 {
-    height: 350px;
-    margin: 0 -56px 0 0;
+    height: 320px;
+    margin: 0 0 0 24px;
     float: right;
 }
 
@@ -158,7 +170,7 @@ mark {
     font-size: 1.2384rem;
     margin: 0;
     line-height: 1.3;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 
 .content__subtitle {
@@ -217,8 +229,8 @@ mark {
 }
 
 .w-40 {
-    width: 50% !important;
-    height: auto !important;
+    width: 50%;
+    height: fit-content;
     z-index: 2;
 }
 
@@ -708,6 +720,9 @@ mark {
     .capsula {
         margin: 0;
     }
+    .w-40 {
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -785,12 +800,12 @@ mark {
     }
     .image-mobile3 {
         display: block;
-        margin: -64px -64px 24px 0;
+        margin: -48px 24px 24px -32px;
     }
     .image-mobile img {
         margin: auto;
         display: block;
-        width: 100%;
+        width: 80%;
     }
     .image-mobile2 img {
         margin: auto;
@@ -869,6 +884,15 @@ mark {
         width: 50%;
         margin: 0 auto 24px;
         display: block;
+    }
+    .flex {
+        display: block;
+    }
+    .w-40 {
+        width: 100%;
+    }
+    .vertical {
+        width: 60% !important;
     }
 }
 
@@ -968,13 +992,11 @@ mark {
         width: 100% !important;
     }
     .image-mobile3 img {
-        margin: 0 0 0 auto;
         display: block;
         width: 80%;
     }
     .image-mobile3 {
         display: block;
-        margin: -64px 0 24px auto;
     }
 }
 

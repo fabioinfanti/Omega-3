@@ -652,6 +652,10 @@ mark {
 .text-mobile {
     display: none;
 }
+.validade {
+    margin: auto; 
+    display: block;
+}
 
 @media (max-width: 1199px) {
     .float-right {
@@ -796,8 +800,7 @@ mark {
     }
     .image-mobile2 {
         display: block;
-        margin: auto;
-        margin-bottom: 24px;
+        margin: 24px auto;
     }
     .image-mobile3 {
         display: block;
@@ -891,9 +894,13 @@ mark {
     }
     .w-40 {
         width: 100%;
+        height: auto !important;
     }
     .vertical {
         width: 60% !important;
+    }
+    .validade {
+        width: 100%;
     }
 }
 
